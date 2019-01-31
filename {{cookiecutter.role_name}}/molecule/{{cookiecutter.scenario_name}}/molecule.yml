@@ -2,11 +2,10 @@
 dependency:
   name: {{ cookiecutter.dependency_name }}
 driver:
-  name: {{ cookiecutter.driver_name }}
+  name: azure
 lint:
-  name: {{ cookiecutter.lint_name }}
+  name: yamllint
 platforms:
-{%- if cookiecutter.driver_name == 'azure' %}
   - name: {{ cookiecutter.role_name}}-bionic
     resource_group_name: ${AZURE_RESOURCE_GROUP:-molecule}
     vm_size: Standard_B1s
@@ -15,19 +14,18 @@ platforms:
       publisher: Canonical
       sku: 18.04-LTS
       version: latest
-{%- endif %}
 provisioner:
-  name: {{ cookiecutter.provisioner_name }}
+  name: ansible
   lint:
-    name: {{ cookiecutter.provisioner_lint_name }}
+    name: ansible-lint
   options:
     become: True
 scenario:
   name: {{ cookiecutter.scenario_name }}
 verifier:
-  name: {{ cookiecutter.verifier_name }}
+  name: testinfra
   lint:
-    name: {{ cookiecutter.verifier_lint_name }}
+    name: flake8
   options:
     sudo: True
 
