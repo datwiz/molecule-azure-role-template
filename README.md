@@ -14,10 +14,10 @@ Out-of-the-box configuration provides:
 The initial molecule configuration can be customised in the `molecule.yml` file.
 
 ## Usage
-Create a new role within a ./&gt;playbook&gt;/roles/. directory:
+Create a new role within a ./&lt;playbook&gt;/roles/. directory:
 ```
 $ export AZURE_RESOURCE_GROUP=sandbox
-$ molecule init template --url https://www.github.com/datwiz/molecule-azure-role-template --role-name my-role
+$ molecule init template --url https://www.github.com/datwiz/molecule-azure-role-template -r my-role
 $ cd my-role
 $ molecule list
 $ molecule create
@@ -27,5 +27,6 @@ $ molecule destroy
 ```
 
 ## References
-* This template was created by customsing the default molecule template using the azure driver.  `molecule init --role-name default --driver azure`
+* This template was created by customsing the default molecule template using the azure driver.
+`molecule init --role-name default --driver azure`
 * cookiecutter-molecule reference example: [retr0h/cookiecutter-molecule](https://github.com/retr0h/cookiecutter-molecule)
