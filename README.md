@@ -2,7 +2,7 @@
 A cookiecutter template for ansible role development using molecule on azure.
 
 ## Assumptions
-* Using an existing Azure resource group.  (env var ${ASURE_RESOURCE_GROUP})
+* Using an existing Azure resource group.  env var ${ASURE_RESOURCE_GROUP}
 * The existing resource group contains a single vnet and subnet
 
 ## Configuration
@@ -14,12 +14,16 @@ Out-of-the-box configuration provides:
 The initial molecule configuration can be customised in the `molecule.yml` file.
 
 ## Usage
-Create a new role within a <playbook>/roles/. directory:
+Create a new role within a ./&gt;playbook&gt;/roles/. directory:
 ```
 $ export AZURE_RESOURCE_GROUP=sandbox
 $ molecule init template --url https://www.github.com/datwiz/molecule-azure-role-template --role-name my-role
 $ cd my-role
 $ molecule list
+$ molecule create
+$ molecule converge
+$ molecule verify
+$ molecule destroy
 ```
 
 ## References
