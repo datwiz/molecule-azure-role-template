@@ -3,7 +3,7 @@
     "description": "role with molecule harness for azure",
     "company": "https://www.github.com/datwiz",
     "license": ["Apache"],
-    "min_ansible_version": "2.4"
+    "min_ansible_version": "2.4",
 
     "molecule_directory": "molecule",
     "dependency_name": "OVERRIDEN",
