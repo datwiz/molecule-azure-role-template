@@ -1,0 +1,6 @@
+# ignore compiled python
+*.pyc
+__pycache__/**
+
+# ignore vi swap files
+.*.swp
