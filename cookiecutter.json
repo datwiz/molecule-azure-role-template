@@ -1,18 +1,10 @@
 {
-    "author": "chris.ottinger",
-    "description": "role with molecule harness for azure",
-    "company": "https://www.github.com/datwiz",
-    "license": ["Apache"],
+    "role_name": "role_name",
+    "scenario_name": "default",
+    "author": "your name",
+    "description": "role description",
+    "company": "your company (optional)",
+    "license": ["BSD", "MIT", "GPLv2", "GPLv3", "Apache", "CC-BY"],
     "min_ansible_version": "2.4",
-
-    "molecule_directory": "molecule",
-    "dependency_name": "OVERRIDEN",
-    "driver_name": "OVERRIDEN",
-    "lint_name": "OVERRIDEN",
-    "provisioner_name": "OVERRIDEN",
-    "provisioner_lint_name": "ansible-lint",
-    "scenario_name": "OVERRIDEN",
-    "role_name": "OVERRIDEN",
-    "verifier_name": "OVERRIDEN",
-    "verifier_lint_name": "flake8"
+    "dependency_name": "galaxy"
 }

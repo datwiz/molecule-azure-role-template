@@ -39,7 +39,7 @@ passed in as parameters) is always nice for users too:
 License
 -------
 
-BSD
+Apache2
 
 Author Information
 ------------------
