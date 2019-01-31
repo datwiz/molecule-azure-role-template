@@ -19,7 +19,7 @@ provisioner:
   lint:
     name: ansible-lint
   options:
-    become: True
+    become: true
 scenario:
   name: {{ cookiecutter.scenario_name }}
 verifier:
@@ -27,5 +27,4 @@ verifier:
   lint:
     name: flake8
   options:
-    sudo: True
-
+    sudo: true
