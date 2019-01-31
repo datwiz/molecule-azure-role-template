@@ -2,8 +2,8 @@
 A cookiecutter template for ansible role development using molecule on azure.
 
 ## Assumptions
-* Using an existing Azure resource group
-* THe existing resource group contains a single vnet and subnet
+* Using an existing Azure resource group.  (env var ${ASURE_RESOURCE_GROUP})
+* The existing resource group contains a single vnet and subnet
 
 ## Configuration
 Out-of-the-box configuration:
